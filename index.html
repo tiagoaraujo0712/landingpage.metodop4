@@ -109,6 +109,21 @@ nav.scrolled { background: rgba(5,5,5,0.92); backdrop-filter: blur(12px); paddin
   transition: all 0.3s;
   font-family: 'Barlow', sans-serif;
 }
+.nav-app-access {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.25em;
+  text-transform: uppercase; color: var(--white-60);
+  background: transparent; padding: 13px 24px;
+  text-decoration: none; border: 1px solid var(--gold-dim); cursor: none;
+  position: relative; overflow: hidden;
+  transition: all 0.3s;
+  font-family: 'Barlow', sans-serif;
+  margin-right: 16px;
+}
+.nav-app-access:hover {
+  color: var(--white);
+  border-color: var(--gold);
+  background: rgba(201,151,58,0.1);
+}
 .nav-cta::before {
   content: ''; position: absolute;
   top: 0; left: -100%; width: 100%; height: 100%;
@@ -504,10 +519,6 @@ nav.scrolled { background: rgba(5,5,5,0.92); backdrop-filter: blur(12px); paddin
   min-height: 600px;
   display: flex; align-items: center; justify-content: center;
   overflow: hidden;
-  background-image: url('founder.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .authority-image-frame img {
   width: 100%;
@@ -1181,6 +1192,7 @@ footer {
     <a href="#coach">COACH P4</a>
     <a href="#oferta">A OFERTA</a>
   </div>
+  <a href="https://metodop4.lovable.app" target="_blank" class="nav-app-access">ACESSAR APP</a>
   <a href="#oferta" class="nav-cta">QUERO DESTRAVAR</a>
 </nav>
 
@@ -1361,7 +1373,7 @@ footer {
   <div class="authority-section" id="autoridade">
     <div class="authority-image-wrap reveal">
       <div class="authority-image-frame">
-        <img src="founder.png" alt="Tiago Araujo - Fundador do Método P4" style="width: 100%; height: 100%; object-fit: cover;" />
+        <img src="./founder.png" alt="Tiago Araujo - Fundador do Método P4" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
       </div>
     </div>
 
